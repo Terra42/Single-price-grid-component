@@ -56,7 +56,11 @@ h3{
   border-radius: 5px;
   box-shadow: 0px 7px 30px 7px rgba(0,0,0,0.1);
   cursor: pointer;
+}
 
+.button:hover{
+  background-color: var(--light-grey);
+  color: var(--cyan);
 }
 
 .invitation{
