@@ -1,0 +1,220 @@
+:root{
+    --cyan: hsl(179, 62%, 43%);
+    --yellow: hsl(71, 73%, 54%);
+    --light-grey: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+    --white: hsl(0, 0%, 100%);
+    --padding: 1.5rem;
+    --margin: 1.4rem;
+}
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+  }
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: var(--light-grey);
+}
+
+h2{
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: var(--margin);
+}
+
+h3{
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: var(--margin);
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button{
+  background-color: var(--yellow);
+  color: var(--white);
+  font-family: 'Karla', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  width: 100%;
+  padding: 0.9rem 0;
+  border-radius: 5px;
+  box-shadow: 0px 7px 30px 7px rgba(0,0,0,0.1);
+  cursor: pointer;
+
+}
+
+.invitation{
+  width: 20rem;
+  line-height: 1.6rem;
+}
+
+.join{
+  background-color: var(--white);
+  color: var(--grayish-blue);
+  padding: var(--padding);
+  border-radius: 5px 5px 0 0;
+}
+
+.join__headline{
+  color: var(--cyan);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.join__subcopy{
+  color: var(--yellow);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  line-height: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.join__text{
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.subscription{
+  background-color: var(--cyan);
+  color: var(--white);
+  padding: var(--padding);
+}
+
+.subscription__price{
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.subscription__figure{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 0.8rem;
+}
+
+.subscription__price-text{
+  font-weight: 300;
+  font-size: 1rem;
+  color: hsl(179, 62%, 75%);
+}
+
+.subscription__button{
+  margin-top: 1.8rem;
+}
+
+.why-us{
+  background-color: var(--cyan);
+  color: var(--white);
+  opacity: 85%;
+  padding: var(--padding);
+  border-radius: 0 0 5px 5px;
+}
+
+.why-us__headline{
+  margin-bottom: 1rem;
+}
+
+.why-us__list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3rem;
+}
+
+.why-us__list-item{
+  font-size: 0.9rem;
+  font-weight: 100;
+  color: hsl(179, 62%, 95%);
+}
+
+
+@media screen and (min-width: 992px) {
+  .invitation{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 39rem;
+  }
+
+  .join, .subscription, .why-us{
+    padding: 2.5rem 2.2rem;
+  }
+
+  .join{
+    grid-column: 1 / -1;
+    border-radius: 7px 7px 0 0;
+  }
+
+  .join__headline{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+  }
+
+  .join__subcopy{
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    letter-spacing: 0;
+  }
+
+  .join__text{
+    font-size: 1rem;
+    font-weight: 300;
+    padding-bottom: 0;
+    margin-bottom: 0.2rem;
+  }
+
+  .subscription{
+    border-radius: 0 0 0 7px;
+  }
+
+  .subscription__headline{
+    margin-bottom: 1.2rem;
+  }
+
+  .subscription__price{
+    margin-top: 0;
+  }
+
+  .subscription__figure{
+    font-size: 2rem;
+  }
+
+  .subscription__price-text, .subscription__text{
+    font-size: 1rem;
+  }
+
+  .subscription__button{
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    margin-top: 1.7rem;
+  }
+
+  .why-us{
+    border-radius: 0 0 7px 0;
+  }
+
+  .why-us__list{
+    line-height: 1.4;
+  }
+
+  .why-us__list-item{
+    font-weight: 100;
+  }
+}
